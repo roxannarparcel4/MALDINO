@@ -5,7 +5,7 @@ pip install -e git+https://github.com/deepgram/sidomo.git#egg=sidomo
 How to use:
 from sidomo import Container
 
-with Container('ubuntu') as c:
+with Container('ubuntu') as c :
     for output_line in c.run('echo hello world'):
         print(output_line)
 Or with the command line tool "dodo" ("docker do"):
