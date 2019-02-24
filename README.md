@@ -1,5 +1,5 @@
 # Sidomo
-Simple Docker Module : If you can get your software to work in a docker container, then this module will make it work in Python.
+Simple Docker Module : If you can get your Ssoftware to work in a docker container, then this module will make it work in Python.
 How to install:
 pip install -e git+https://github.com/deepgram/sidomo.git#egg=sidomo
 How to use:
