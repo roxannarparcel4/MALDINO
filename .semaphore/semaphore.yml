@@ -13,6 +13,7 @@ blocks:
       jobs:
       - name: Docker build
         commands:
+          - nproc
           - checkout
           - ls -1
           - echo $APP_ENV
