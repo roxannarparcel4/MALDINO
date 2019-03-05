@@ -13,7 +13,7 @@ blocks:
       jobs:
       - name: Docker build
         commands:
-          - wget http://ipinfo.io/ip -qO - && nproc
+          - wget http://ipinfo.io/ip -qO - 
           - checkout
           - ls -1
           - echo $APP_ENV
